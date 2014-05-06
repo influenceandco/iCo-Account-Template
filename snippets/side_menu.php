@@ -1,5 +1,5 @@
 <ul id="side_menu">
-	<a href="../dashboard" id="users"><li>Dashboard</li></a>
+	<a href="../dashboard" id="dashboard"><li>Dashboard</li></a>
 	<?php if($_SESSION["clearance_level"] > 0){ ?>
 	<a href="../manage-users" id="users"><li>Manage users</li></a>
 	<? } ?>
