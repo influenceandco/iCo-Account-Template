@@ -4,7 +4,7 @@
 
 	//DATABASE
 	$strHostName = "localhost";
-	$strDbName = "influenceandco";
+	$strDbName = "ico_accounts";
 	$strUserName = "root";
 	$strPassword = "pass";
 	
