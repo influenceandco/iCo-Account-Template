@@ -1,0 +1,67 @@
+/************** MAIN ELEMENTS ***************/
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/ProximaNova-Reg-webfont.eot');
+    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url('../fonts/ProximaNova-Sbold-webfont.eot');
+    src: url('../fonts/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Sbold-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Sbold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, body{
+	height: 100%;
+    font-family: 'proxima_nova_rgregular';
+	color: #66686a;
+	font-weight: 300;
+}
+
+#wrap{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+footer{
+	width: 100%;
+	min-height: 4em;
+	padding: 40px 0px 40px;
+}
+
+
+/*********** RESPONSIVE **********/
+
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+
+}
+
+@media (max-width: 767px) {
+	
+
+}
+
+@media (max-width: 568px) {
+	
+}
