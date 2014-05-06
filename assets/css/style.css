@@ -70,7 +70,7 @@ button{
 	transition:background 0.25s ease-in;	
 }
 button:hover{
-	background: #4CB9D2;
+	background: #3198af;
 	-webkit-transition:background 0.25s ease-in;
 	-moz-transition:background 0.25s ease-in;
 	-o-transition:background 0.25s ease-in;
@@ -94,12 +94,12 @@ button:focus{
 }
 
 button.remove{
-	background: #f3c6b9;
+	background: #d49696;
 
 }
 
 button.remove:hover{
-	background: #eda495;
+	background: #be7a7a;
 }
 input[type = "text"], input[type = "password"], textarea, input[type="email"]{
 	background: transparent;
@@ -180,7 +180,7 @@ div.error{
 label.error{
 	padding: 5px 0px;
 	font-size: 8pt;
-	color: #eda495;
+	color: #be7a7a;
 }
 label.error.valid{
 	color: #22ab9b;
@@ -328,12 +328,12 @@ a:hover{
 
 .user_remove i{
 	display: none;
-	color: #f3c6b9;
+	color: #d49696;
 
 }
 
 .user_remove i:hover{
-	color: #eda495;
+	color: #be7a7a;
 	cursor: hand;
 	cursor: pointer;
 }
