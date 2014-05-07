@@ -14,7 +14,6 @@
     <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="../assets/css/bootstrap-editable.css" rel="stylesheet">
     <link href="../assets/css/font-awesome.min.css"  rel="stylesheet">
-    <link href="../assets/css/icomoon.css"  rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
 
   </head>
