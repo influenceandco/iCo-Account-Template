@@ -256,6 +256,7 @@ select:focus{
 
 	line-height: 30px;
 	padding: 10px 10px;
+	margin: 5px 0px;
 	background: transparent;
 	border-radius: 5px;
 	-webkit-transition:background 0.25s ease-in, color 0.25s ease-in;
