@@ -4,7 +4,7 @@ include("../scripts/dbconnect.php");?>
 
 <?php include("../snippets/header.php");?><!-- header-->
 
-<title>Dashboard| Influence & Co.</title>
+<title>Dashboard | Influence & Co.</title>
 	
 <!--body goes here-->
 	<?php include("../snippets/alert_modal.php");?>
