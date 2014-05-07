@@ -20,6 +20,11 @@
 
 				<button>Login</button>
 				<div class="error" id="login_error"></div>
+				<div class="clearfix"></div>
+				<div class="bottom_link">
+					<a href="../signup">Sign up for new account.</a> <a href="../password-recovery">Forgot your password?</a>		
+	
+				</div>				
 			</form>
 		</div>
 	</div>

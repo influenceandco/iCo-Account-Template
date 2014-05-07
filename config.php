@@ -9,4 +9,7 @@
 	$strPassword = "pass";
 	
 
+	$phpmailer_email = "";
+	$phpmailer_password = "";
+	
 ?>
