@@ -55,12 +55,8 @@
 		$subject = "CopyMint Password Recovery";
 		$message = "The password for Influecena & Co. has been reset.  Use the following email address and password to login.<br><br>Email: ".$email."<br>Password: ".$password."<br><br>You can change your password at anytime in the account settings section. <br>";
 				    
-		$headers  = 'MIME-Version: 1.0' . "\r\n";
-		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		$headers .= 'From: CopyMint <noreply@copymint.com>' . "\r\n";
-		
-		
-		mail($to, $subject, $message, $headers);
+		require_once("../scripts/mail_functions.php");
+		sendEmail($subject, $message, $subject, $email);
 
 		echo true;
 		

@@ -1,4 +1,5 @@
 <?php
+include("../scripts/dbconnect.php");
 
 
 function sendEmail($title, $body, $subject, $email){

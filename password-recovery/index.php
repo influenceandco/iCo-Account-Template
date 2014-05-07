@@ -22,8 +22,10 @@
 						<label>Email Address</label>
 						<input type="text" name="email" id="forgot_email" placeholder="Email Address" class="input-block-level">
 						
-						<div id="forgot_error" class="error"></div>
 						<button>Submit</button>
+						<div class="clearfix"></div>
+						<div id="forgot_error" class="error"></div>
+						<div class="clearfix"></div>
 					</form>
 				</div>
 
@@ -68,15 +70,8 @@ $("#forgot_form").validate({
             success: function (res) {
                 
                 if(res == true){
-                	$("#forgot_email").val("");
-                
-                     $("#forgot_error").html("Your new password has been sent to your email address").hide().fadeIn().delay(2000).fadeOut(function(){
-	                     	$("#login_section").removeClass("cover");
-							$("#login_section").addClass("show");
-							
-							$("#forgot_section").removeClass("show");
-							$("#forgot_section").addClass("cover");
-                     });
+                	 $("#forgot_email").val("");
+                     $("#forgot_error").html("Your new password has been sent to your email address").hide().fadeIn().delay(2000).fadeOut();
 
                 }else{
                      
