@@ -43,11 +43,8 @@ $("#login_form").validate({
 
     },
     submitHandler: function (form) {
-        $("#login_form").append('<div class="spinner"><i class="fa fa-spinner fa-spin"></i></div>');
-        
-        ///ajax here::::
-        $("#login_error").empty();
-        
+        $("#login_error").html('<div class="spinner"><i class="fa fa-spinner fa-spin"></i></div>');
+                
         var login_email = $("#login_email").val();
         var login_password = $("#login_password").val();
 
@@ -61,7 +58,7 @@ $("#login_form").validate({
             url: "../scripts/login.php",
             data: data,
             success: function (res) {
-            	$("#login_form div").remove(".spinner");//remove loading icon here
+            	 $("#login_error").html("");//remove loading icon here
 
                 if(res == true){
                 	window.location = "../dashboard";
