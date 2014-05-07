@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 .spinner{
-	color: #22ab9b;
+	color: #4CB9D2;
 	font-size: medium;
 }
 
@@ -148,19 +148,20 @@ input[type="text"]::-moz-placeholder, textarea::-moz-placeholder, input[type="em
     pointer-events: none;
 }
 .validation{
-	color:rgba(0,167,152,0.6);
+	color:rgba(76,185,209,0.6);
 	display: none;
 }
 .validation.error{
-	color:rgba(237,164,149,0.6);
+	color:rgba(212,150,150,0.6);
 }
 
 
 input.form_error, textarea.form_error{
-	border: 2px solid rgba(237,164,149,0.3);
+	border: 2px solid rgba(212,150,150,0.3);
+
 }
 input.form_error:focus, textarea.form_error:focus{
-	border: 2px solid rgba(237,164,149,0.6);
+	border: 2px solid rgba(212,150,150,0.6);
 }
 label{
 	font-weight: 300;	

@@ -1,4 +1,4 @@
-<?php session_start(); if($_SESSION["user"]){header("Location: ../edit-article");} ?>
+<?php session_start(); if($_SESSION["user"]){header("Location: ../dashboard");} ?>
 <?php include("../scripts/dbconnect.php");?> <!-- connect to database-->
 <?php include("../snippets/header.php");?><!-- header-->
 

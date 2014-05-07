@@ -20,16 +20,33 @@
 							<div id="new_user">
 								<h3>Add new user</h3>
 								<form id="register_form">
+								
 									<label>First Name</label>
-									<input class="input-block-level" id="register_firstname" type="text" name="firstname" placeholder="First Name">
+									<div class="right-inner-addon">
+										<span class="validation"></span>
+										<input class="input-block-level" id="register_firstname" type="text" name="firstname" placeholder="First Name">
+									</div>
 									<label>Last Name</label>
-									<input class="input-block-level" id="register_lastname" type="text" name="lastname" placeholder="Last Name">	
+									<div class="right-inner-addon">
+										<span class="validation"></span>
+										<input class="input-block-level" id="register_lastname" type="text" name="lastname" placeholder="Last Name">
+									</div>
+								
 									<label>Email Address</label>
-									<input class="input-block-level" id="register_email" type="text" name="email" placeholder="Email Address">	
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="register_email" type="text" name="email" placeholder="Email Address">	
+									</div>
 									<label>Password</label>
-									<input class="input-block-level" id="register_password" type="password" name="password" placeholder="Password">			
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="register_password" type="password" name="password" placeholder="Password">	
+									</div>		
 									<label>Password Confirmation</label>
-									<input class="input-block-level" id="register_password_confirm" type="password" name="confirm_password" placeholder="Password">										
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="register_password_confirm" type="password" name="confirm_password" placeholder="Password">		
+									</div>								
 									<button>Add user</button>
 									<div class="error" id="register_error"></div>								
 								</form>
@@ -128,6 +145,26 @@ $.validator.addMethod("pwcheck", function(value) {
 });    
 
 
+$.validator.addMethod("new_email", function(value) {
+	var isSuccess = false;
+    $.ajax({url: "../scripts/check_email.php", 
+            data: {email:value}, 
+			type: 'POST',
+			async: false, 
+            success: 
+                function(res) { 
+                	if(res == true){
+	                	isSuccess = true;
+                	}else{
+	                	isSuccess = false;
+                	}
+                
+                }
+          });
+    return isSuccess;
+});
+
+
 $("#register_form").validate({
 
     rules: {
@@ -140,7 +177,8 @@ $("#register_form").validate({
         },
         email: {
             required: true,
-            email: true
+            email: true,
+            new_email: true
         },
         password: {
             required: true,
@@ -154,10 +192,21 @@ $("#register_form").validate({
         }
     },
     messages:{
+      email:{
+	      new_email:"Email already in use.",
+      },
 	  password:{
 		  pwcheck: "Password must include at least one upper-case and one numerical character.",
 	  }  
     },
+	success: function(label, element){
+		$(element).removeClass("form_error").siblings(".validation").show().removeClass("error").html("<i class='fa fa-check'></i>");
+		
+	},    
+	highlight: function(element, errorClass) {
+	    $(element).addClass("form_error");	
+		$(element).siblings(".validation").show().addClass("error").html("<i class='fa fa-exclamation-triangle'></i>");
+	},
     submitHandler: function (form) {
         $("#register_error").html('<div class="spinner"><span class="fa fa-spinner fa-spin"></span></div>');
         
