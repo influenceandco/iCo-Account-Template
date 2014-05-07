@@ -233,8 +233,12 @@ $("#register_form").validate({
             	 if (res == true) {
             	 		$("#register_form").each(function(){
 	            	 		$(this).children("input, select").val("");
-            	 		})
-            	 
+            	 		});
+            	 		
+				 		$(".validation").each(function(){
+	            	 		$(this).hide();
+            	 		});   
+            	 		        	 
                    		search = "";
 						number = 0;
 						$("#user_list").empty();
