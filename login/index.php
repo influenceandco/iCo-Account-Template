@@ -19,6 +19,7 @@
 				<input id="login_password" name="password" type="password" class="input-block-level" placeholder="Password">
 
 				<button>Login</button>
+				<div class="clearfix"></div>
 				<div class="error" id="login_error"></div>
 				<div class="clearfix"></div>
 				<div class="bottom_link">
