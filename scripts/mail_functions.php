@@ -1,5 +1,4 @@
 <?php
-include("../scripts/dbconnect.php");
 
 
 function sendEmail($title, $body, $subject, $email){
@@ -199,7 +198,6 @@ ul li, ol li {
 			
 			<div style=\"font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6; font-weight: 300; max-width: 600px; display: block; margin: 0 auto; padding: 0;\">
 			<table style=\"font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6; font-weight: 300; width: 100%; margin: 0; padding: 0;\"><tr style=\"font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6; font-weight: 300; margin: 0; padding: 0;\"><td style=\"font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6; font-weight: 300; margin: 0; padding: 0;\">
-						<img src=\"https://copymint.com/assets/img/logo.png\" style=\"font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6; font-weight: 300; max-width: 100%; width: 180px; margin: 0; padding: 0;\" />
 						<div style=\"font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6; font-weight: 300; margin: 0; padding: 0;\">
 						".$body."
 						</div>
@@ -228,6 +226,7 @@ ul li, ol li {
 	
 	
 	
+	include("../config.php");
 	
 	
 	
