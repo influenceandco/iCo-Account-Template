@@ -231,8 +231,8 @@ $("#register_form").validate({
 				$("#register_error").html("");
 				            	
             	 if (res == true) {
-            	 		$("#register_form").each(function(){
-	            	 		$(this).children("input, select").val("");
+					 	$("#register_form input").each(function(){
+	            	 		$(this).val("");
             	 		});
             	 		
 				 		$(".validation").each(function(){
