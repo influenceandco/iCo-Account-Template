@@ -55,7 +55,7 @@
 					</div>
 					<div class="linebreak"></div>
 					
-					<input id="searchbar" type="text" placeholder="Search editors">
+					<input id="searchbar" type="text" placeholder="Search users">
 					<ul id="user_list">
 					
 					</ul>
