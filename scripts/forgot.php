@@ -52,7 +52,7 @@
 		
 		
 		$to = $email;
-		$subject = "CopyMint Password Recovery";
+		$subject = "Influence & Co. Password Recovery";
 		$message = "The password for Influecena & Co. has been reset.  Use the following email address and password to login.<br><br>Email: ".$email."<br>Password: ".$password."<br><br>You can change your password at anytime in the account settings section. <br>";
 				    
 		require_once("../scripts/mail_functions.php");
